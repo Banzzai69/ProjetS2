@@ -15,7 +15,8 @@ int length(int t[])
 
 void afficher_departements(int t[], int len)
 {
-      for(int  i = 0; i<len; i++) {
+      for(int  i = 0; i<len, t[i] !=0; i++) {
+        
         printf("[%i] ", t[i]);
       }
       
@@ -49,4 +50,29 @@ do {
 
 while(x !=-1 && i < TMAX);
 t[i]='0';
-};
+}
+
+int ajout_departement(int t[],int len,int x)
+{
+    if(rechercher_departements(t, len,x)) 
+    {
+   
+        printf("Le département a ete trouve:",x);
+        return 0;
+    }
+
+    
+    for (int i = 0; i < TMAX; i++)
+    {
+        if(t[i] == 0)
+       {   
+            t[i] =x;
+    
+            printf("Département ajouté : %d\n", t[i]);
+            return 1;   
+        }
+    
+    }
+}
+    
+    
