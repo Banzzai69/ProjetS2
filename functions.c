@@ -74,5 +74,28 @@ int ajout_departement(int t[],int len,int x)
     
     }
 }
+
+int supprime_donnee(int t[],int len,int x)
+{
+    if(rechercher_departements(t,len,x))
+    {
+        printf("Le département a été trouvé:\n");
+        return 0;
+    }
+
+    for(int i = i-1; i < TMAX; i--)
+    {
+        if(t[i] ==0)
+        {
+            t[i] =x;
+            printf("Valeur supprimé",t[i]);
+            return 1;
+        }
+    }
     
+}
+
+
+
+ 
     

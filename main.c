@@ -33,4 +33,7 @@ afficher_departements(aura,TMAX);
 
 ajout_departement(aura,TMAX,42);
 afficher_departements(aura,TMAX);
+
+supprime_donnee(aura,TMAX,42);
+afficher_departements(aura,TMAX);
 };

@@ -11,4 +11,6 @@ int rechercher_departements(int t[],int len,int x);
 int inserer_donnees(int t[]);
 
 int ajout_departement(int t[],int len,int x);
+
+int supprime_donnee(int t[],int len,int x);
 #endif 
