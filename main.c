@@ -31,9 +31,12 @@ printf("\n");
 //inserer_donnees (aura);
 afficher_departements(aura,TMAX);
 
+//ajouter un departement manquant
+
 ajout_departement(aura,TMAX,42);
 afficher_departements(aura,TMAX);
 
-supprime_donnee(aura,TMAX,42);
+//supprimer un departement 
+supprime_donnee(aura,TMAX,69);
 afficher_departements(aura,TMAX);
 };
